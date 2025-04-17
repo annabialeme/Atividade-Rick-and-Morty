@@ -1,6 +1,6 @@
 .card {
-    background-color: rgb(250, 248, 131);
-    width: 275px;
+    width: 300px;
+    background-color: rgb(241, 247, 127);
     padding: 1rem;
     border-radius: 15px;
     text-align: center;
@@ -13,24 +13,10 @@
 
 .avatar {
     width: 125px;
-    border-radius: 25%;
+    border-radius: 50%;
 }
 
 .title {
     margin: 10px 0 5px;
     font-size: 20px;
-}
-
-.buttonReset {
-    width: 122px;
-    border-radius: 8px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5 ease;
-}
-
-.buttonReset:hover {
-    background-color: darkred;
-    color: lightgray;
 }
