@@ -57,11 +57,11 @@
   user-select: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .buttonSearch {
-  background: linear-gradient(135deg, #28a745, #34d058);
+  background: linear-gradient(135deg, #28a745, #e6f0e8);
 }
 
 .buttonSearch:hover {
@@ -70,7 +70,7 @@
 }
 
 .buttonReset {
-  background: linear-gradient(135deg, #dc3545, #ff5e6c);
+  background: linear-gradient(135deg, #dc3545, #fcd9dc);
 }
 
 .buttonReset:hover {
@@ -79,7 +79,7 @@
 }
 
 .buttonNav {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #ff00ff, #b3dcfb);
 }
 
 .buttonNav:hover {

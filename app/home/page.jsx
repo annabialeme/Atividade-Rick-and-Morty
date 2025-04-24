@@ -133,10 +133,10 @@ export default function Home() {
             <div className={styles.controls}>
                 <input type="text" placeholder="Buscar por nome" value={search} onChange={(e) => setSearch(e.target.value)} className={styles.input} />
                 <button onClick={handleSearch} className={styles.buttonSearch}>
-                    Buscar
+                    Procurar
                 </button>
                 <button onClick={handleReset} className={styles.buttonReset}>
-                    Resetar
+                    Reiniciar
                 </button>
             </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
                 </button>
             </div>
 
-            {notFound && <h1 className={styles.notFound}>Nenhum personagem encontrado 😢</h1>}
+            {notFound && <h1 className={styles.notFound}>Nenhum personagem encontrado 🤧</h1>}
 
             {loading ? (
                 <div className={`${styles.loaderWrapper} ${loading ? "" : styles.hidden}`}>
