@@ -12,11 +12,28 @@
 }
 
 .avatar {
-    width: 125px;
-    border-radius: 50%;
+    width: 150px;
+    border-radius: 10%;
 }
 
 .title {
     margin: 10px 0 5px;
     font-size: 20px;
+    color: white;
+    background: linear-gradient(135deg, #ff67de, #e6f0e8);
+}
+.character.species{
+    color: dark;
+}
+
+.status {
+    background: linear-gradient(135deg, #4a174a, #facaeb);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.species {
+    background: linear-gradient(135deg, #4a174a, #facaeb);
+    border-radius: 5px;
+   margin: 10px;
 }

@@ -1,5 +1,6 @@
 "use client";
 
+
 import styles from "./Home.module.css";
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
@@ -8,8 +9,12 @@ import "react-toastify/dist/ReactToastify.css";
 import CharacterCard from "../../components/CharacterCard";
 import Loader from "../../components/Loader";
 
+
 export default function Home() {
-   
+ 
+   const handleBottomNotification = () => {
+    toast.info("Notificação na parte inferior", {position: "bottom-right"})
+   }
     const [characters, setCharacters] = useState([]);
     const [notFound, setNotFound] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -110,12 +115,13 @@ export default function Home() {
         setSearch("");
         setPage(1);
         fetchCharacters("", 1);
-        toast.success("Filtro foi resetado", { position: "top-left" });
+        toast.success("Filtro resetado", { position: "top-left" });
     };
 
     const handleCardClick = (char) => {
-        toast.info(`Você clicou em ${char.name} que está ${char.status}`);
+        toast.info(`Você clicou em ${char.name}`);
     };
+  
 
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
@@ -126,8 +132,8 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <ToastContainer position="top-right" autoClose={7500} theme="light" />
-
+            <ToastContainer position="center" autoClose={7500} theme="" />
+           
             <h1 className={styles.title}>Personagens de Rick and Morty</h1>
 
             <div className={styles.controls}>

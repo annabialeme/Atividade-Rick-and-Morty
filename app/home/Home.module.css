@@ -13,6 +13,7 @@
   margin-bottom: 2rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 6px rgba(248, 172, 230, 0.6);
+  
 }
 
 .controls {
@@ -110,7 +111,7 @@
 
 .loading {
   text-align: center;
-  color: #fff;
+  color: #ffcafd;
   font-size: 1.25rem;
   margin-top: 2rem;
 }

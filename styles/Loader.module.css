@@ -10,7 +10,7 @@
 }
 
 .message {
-    background-color: white;
+    background-color: rgb(255, 201, 243);
     padding: 1.25rem;
-    border-radius: 50%;
+    border-radius: 30%;
 }
