@@ -12,9 +12,6 @@ import Loader from "../../components/Loader";
 
 export default function Home() {
  
-   const handleBottomNotification = () => {
-    toast.info("Notificação na parte inferior", {position: "bottom-right"})
-   }
     const [characters, setCharacters] = useState([]);
     const [notFound, setNotFound] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -132,7 +129,7 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <ToastContainer position="center" autoClose={7500} theme="" />
+            <ToastContainer position="center" autoClose={7500} theme="white" />
            
             <h1 className={styles.title}>Personagens de Rick and Morty</h1>
 

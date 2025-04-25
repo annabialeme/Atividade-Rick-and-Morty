@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
     return (
         <html>
             <head>
-                <link rel="icon" href="./rick.jpg" />
+                <link rel="icon" href="./rick.jpeg" />
             </head>
             <body>{children}</body>
         </html>
